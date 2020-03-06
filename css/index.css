@@ -184,8 +184,12 @@ button {
 }
 .container form button:hover {
   background: lightskyblue;
-  color: white;
+  color: #fff;
   transition: 0.1s ease-in-out;
+}
+.dark {
+  background: #333 !important;
+  transition: 0.2s ease-in-out;
 }
 .toggle {
   position: absolute;
@@ -204,4 +208,12 @@ button {
   background: #000;
   color: white;
   transition: 0.1s ease-in-out;
+}
+.darkBtn {
+  border: 2px solid lightskyblue;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+.darkBtn:hover {
+  background: lightskyblue;
 }
