@@ -8,6 +8,7 @@
   </head>
   <body>
     <div class="container">
+      <div id="particles-js"></div>
       <button class="toggle">Toggle Dark Mode</button>
       <form>
         <label for="">Username:</label>
@@ -21,4 +22,11 @@
     </div>
   </body>
   <script src="js\index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    // Particles
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+  </script>
 </html>
