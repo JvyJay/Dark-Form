@@ -15,7 +15,7 @@ const password = document.querySelector('#password');
 const submit = document.querySelector('#formSubmit');
 
 // Error msg
-function validateErr() {
+function errMsg() {
   const errMsg = document.createElement('p');
   errMsg.classList.add('errMsg');
   errMsg.textContent = 'Please fill in all fields';
@@ -38,7 +38,7 @@ function successMsg() {
 // Validate form
 function validate() {
   if (username.value == '' || email.value == '' || password.value == '') {
-    validateErr();
+    errMsg();
   } else {
     successMsg();
   }
