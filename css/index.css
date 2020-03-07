@@ -169,6 +169,21 @@ button {
   -webkit-box-shadow: 5px 5px 20px -8px #000000;
   box-shadow: 5px 5px 20px -8px #000000;
 }
+@media (max-width: 1000px) {
+  .container form {
+    width: 35%;
+  }
+}
+@media (max-width: 700px) {
+  .container form {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .container form {
+    width: 75%;
+  }
+}
 .container form label {
   width: 100%;
   margin: 20px 0 5px 0;
