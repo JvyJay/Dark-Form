@@ -15,14 +15,12 @@ const password = document.querySelector('#password');
 const submit = document.querySelector('#formSubmit');
 
 // Error msg
-function errMsg() {
+function errFunc() {
   const errMsg = document.createElement('p');
   errMsg.classList.add('errMsg');
   errMsg.textContent = 'Please fill in all fields';
   errMsg.style.cssText = 'color: red; font-weight: bolder;';
   form.prepend(errMsg);
-
-  setTimeout(() => errMsg.remove(), 3000);
 }
 
 // Success msg
@@ -37,10 +35,15 @@ function successMsg() {
 
 // Validate form
 function validate() {
+  const err = document.querySelector('.errMsg');
   if (username.value == '' || email.value == '' || password.value == '') {
-    errMsg();
+    errFunc();
+    // Makes sure the errFunc won't create multiple elements
+    errFunc = function() {};
   } else {
     successMsg();
+    // Removes errFunc msg from DOM if necessary
+    err.remove();
   }
 }
 
