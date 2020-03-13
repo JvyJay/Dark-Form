@@ -184,15 +184,19 @@ button {
     width: 75%;
   }
 }
-.container form label {
+.container form .form-control {
   width: 100%;
-  margin: 20px 0 5px 0;
+  margin: 15px 0 10px 0;
 }
-.container form input {
+.container form .form-control label {
   width: 100%;
+}
+.container form .form-control input {
+  width: 95%;
   padding: 5px;
   border-radius: 5px;
   border: solid 2px #e0e0e0;
+  margin: 5px 0 5px 0;
 }
 .container form button {
   margin-top: 20px;
@@ -212,6 +216,11 @@ button {
 .dark {
   background: #333 !important;
   transition: 0.2s ease-in-out;
+}
+small {
+  color: darkred;
+  visibility: hidden;
+  font-weight: lighter;
 }
 .toggle {
   position: absolute;

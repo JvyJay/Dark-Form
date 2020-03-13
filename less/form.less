@@ -36,16 +36,45 @@
       width: 75%;
     }
 
-    label {
+    .form-control {
       width: 100%;
-      margin: 20px 0 5px 0;
-    }
+      margin: 15px 0 10px 0;
 
-    input {
-      width: 100%;
-      padding: 5px;
-      border-radius: 5px;
-      border: solid 2px rgb(224, 224, 224);
+      label {
+        width: 100%;
+      }
+
+      input {
+        width: 95%;
+        padding: 5px;
+        border-radius: 5px;
+        border: solid 2px rgb(224, 224, 224);
+        margin: 5px 0 5px 0;
+      }
+
+      // .error {
+      //   small {
+      //     visibility: visible !important;
+      //   }
+      // }
+
+      // .success {
+      //   small {
+      //     visibility: hidden !important;
+      //   }
+      // }
+
+      // .error {
+      //   input {
+      //     border: solid 2px darkred !important;
+      //   }
+      // }
+
+      // .success {
+      //   input {
+      //     border: solid 2px lightgreen !important;
+      //   }
+      // }
     }
 
     button {
@@ -70,4 +99,10 @@
 .dark {
   background: @dark !important;
   transition: 0.2s ease-in-out;
+}
+
+small {
+  color: darkred;
+  visibility: hidden;
+  font-weight: lighter;
 }

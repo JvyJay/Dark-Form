@@ -11,13 +11,27 @@
       <div id="particles-js"></div>
       <button class="toggle">Toggle Dark Mode</button>
       <form id="myForm">
-        <label for="">Username:</label>
-        <input id="username" name="username" type="text" />
-        <label for="">Email:</label>
-        <input id="email" name="email" type="email" />
-        <label for="">Password:</label>
-        <input id="password" name="password" type="password" />
-        <button id="formSubmit" value="Submit" type="submit">Sign Up</button>
+        <div class="form-control">
+          <label for="">Username:</label>
+          <input id="username" name="username" type="text" />
+          <small>Error</small>
+        </div>
+        <div class="form-control">
+          <label for="">Email:</label>
+          <input id="email" name="email" type="email" />
+          <small>Error</small>
+        </div>
+        <div class="form-control">
+          <label for="">Password:</label>
+          <input id="password" name="password" type="password" />
+          <small>Error</small>
+        </div>
+        <div class="form-control">
+          <label for="">Confirm Password:</label>
+          <input id="password2" name="password2" type="password" />
+          <small>Error</small>
+        </div>
+        <button value="Submit" type="submit">Sign Up</button>
       </form>
     </div>
   </body>
