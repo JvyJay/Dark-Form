@@ -45,6 +45,8 @@ const validate = () => {
     errMsg(password2, 'Password confirmation is required');
   } else if (password2.value !== password.value) {
     errMsg(password2, 'Password does not match');
+  } else if (password2.value.length <= 6) {
+    errMsg(password2, 'Password must be longer than 6 characters');
   } else {
     successMsg(password2);
     signupSuccess();
@@ -52,7 +54,7 @@ const validate = () => {
 };
 
 // Error msg
-let fillTheForm = () => {
+const fillTheForm = () => {
   const errMsg = document.createElement('p');
   errMsg.classList.add('errMsg');
   errMsg.textContent = 'Please fill in all fields';
